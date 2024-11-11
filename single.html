@@ -368,10 +368,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <h5 class="leave">Leave a Comment</h5>
           <div class="clear"></div>
-          <form method="post" action="contact-post.html">
+          <form class="userComment">
             <div class="to">
               <input
                 type="text"
+                id="name"
                 class="text"
                 value="Name..."
                 onfocus="this.value = '';"
@@ -379,6 +380,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               />
               <input
                 type="text"
+                id="email"
                 class="text"
                 value="Email..."
                 onfocus="this.value = '';"
@@ -388,6 +390,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="text1">
               <textarea
+                id="comment"
                 value="Comment..."
                 onfocus="this.value = '';"
                 onblur="if (this.value == '') {this.value = 'Message';}"
@@ -396,7 +399,9 @@ Comment...</textarea
               >
             </div>
             <div>
-              <a href="#" class="submit">Add a comment</a>
+              <a href="#" class="btnSubmit">
+                <button type="submit" class="submit">Add a comment</button>
+              </a>
               <div class="clear"></div>
             </div>
           </form>
